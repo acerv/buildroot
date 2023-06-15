@@ -1,0 +1,17 @@
+config BR2_PACKAGE_LTX
+	bool "ltx"
+	default y
+	help
+	  Linux Test eXecutor.
+
+	  https://github.com/acerv/ltx.git
+
+if BR2_PACKAGE_LTX
+
+config BR2_PACKAGE_LTX_LIB
+	bool "Compile as library"
+	default n
+	help
+	  Linux Test eXecutor library.
+
+endif
